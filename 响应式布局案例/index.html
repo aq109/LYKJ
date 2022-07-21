@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/this.css">
+    <title>Document</title>
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.cn/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://cdn.jsdelivr.cn/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <style>
+      
+      nav {
+        background-image: url(https://main.qcloudimg.com/trisys/assets/home/images/hero/demo-ani-bg.jpg);
+        background-size: cover;
+      }
+      .logo a {
+        display: block;
+        width: 78px;
+        height: 18px;
+        background: url(https://cloudcache.tencentcs.com/qcloud/portal/kit/images/slice/logo.23996906.svg) no-repeat;
+      }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- pc 平板 页面 导航-->
+            <div class="big-page">
+                <nav>
+                    <div class="left">
+                      <div class="logo">
+                          <a href="javascript:;"></a>
+                      </div>
+                      <div class="nav-left-list">
+                        <ul class="nav-left-items">
+                          <li><a href="javascript:;">最近活动</a></li>
+                          <li><a href="javascript:;">产品</a></li>
+                          <li><a href="javascript:;">解决方案</a></li>
+                          <li><a href="javascript:;">定价</a></li>
+                          <li><a href="javascript:;">企业中心</a></li>
+                          <li><a href="javascript:;">云市场</a></li>
+                          <li><a href="javascript:;">开发者</a></li>
+                          <li><a href="javascript:;">客户支持</a></li>
+                          <li><a href="javascript:;">合作与生态</a></li>
+                          <li><a href="javascript:;">了解腾讯云</a></li>
+                          <li><a href="javascript:;">更多》</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="nav-right">
+                      <input type="search" name="search-some" id="search-some" placeholder="云服务">
+                      <i class="glyphicon glyphicon-search search-right"></i>
+                      <ul class="nav-right-items">
+                        <li><a href="javascript:;">中文站</a></li>
+                        <li><a href="javascript:;">文档</a></li>
+                        <li><a href="javascript:;">备案</a></li>
+                        <li><a href="javascript:;">控制台</a></li>
+                        <li><a href="javascript:;">登录</a></li>
+                        <li><a href="javascript:;">免费注册</a></li>
+                      </ul>
+                    </div>
+                </nav> 
+            </div>
+
+            <!-- 手机页面  导航 -->
+            <div class="small-page">
+                <div class="small-nav">
+                    <div class="small-nav-logo logo">
+                        <a href="javascript:;"></a>
+                    </div>
+                    <div class="small-right">
+                        <i class="glyphicon glyphicon-search small-icon small-page-icon"></i>
+                        <i class="glyphicon glyphicon-user small-icon small-page-icon"></i>
+                        <i class="glyphicon glyphicon-align-justify small-icon small-page-icon" onclick="changeOff()"></i>
+                        <i class="glyphicon glyphicon-remove small-page-icon icon-hidden" onclick="changeOn()"></i>
+                    </div>
+                </div>
+                <div id="small-list">
+                    <div class="small-items">
+                        <div class="small-items-left">
+                            <div class="small-left-top">
+                                <ul>
+                                    <li><a href="javascript:;">最新活动</a></li>
+                                    <li class="small-current"><a href="javascript:;">产品</a></li>
+                                    <li><a href="javascript:;">解决方案</a></li>
+                                    <li><a href="javascript:;">文档</a></li>
+                                    <li><a href="javascript:;">定价</a></li>
+                                    <li><a href="javascript:;">企业中心</a></li>
+                                    <li><a href="javascript:;">云市场</a></li>
+                                    <li><a href="javascript:;">开发者</a></li>
+                                    <li><a href="javascript:;">客户支持</a></li>
+                                    <li><a href="javascript:;">合作与生态</a></li>
+                                    <li><a href="javascript:;">了解腾讯云</a></li>
+                                </ul>
+                            </div>
+                            <div class="small-left-bottom">
+                                <ul>
+                                    <li><a href="javascript:;">登录/注册</a></li>
+                                    <li><a href="javascript:;">控制台</a></li>
+                                    <li><a href="javascript:;">国际站</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="small-items-right">
+                            <p>产品</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn1 = document.querySelector("#small-list");
+        let btnIcon = document.querySelectorAll('.small-icon');
+        let btn2 =document.querySelector('.icon-hidden');
+         function changeOff(){
+            btn1.style.display = 'block';
+            btnIcon.forEach(function(ele){
+                ele.style.display = 'none';
+                btn2.style.display = 'block';
+            })
+         }
+         function changeOn(){
+            btn1.style.display = 'none';
+            btnIcon.forEach(function(ele){
+                ele.style.display = 'block';
+                btn2.style.display = 'none';
+            })
+         }
+    </script>
+</body>
+</html>
