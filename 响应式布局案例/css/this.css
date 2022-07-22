@@ -84,6 +84,7 @@
         display: block;
         text-align: center;
     }
+
    
 }
 .clearfix::after,
@@ -255,6 +256,7 @@ nav:hover .search-right {
     background-size: cover;
     background-position: 0 -62px;
     height: 500px;
+    margin-bottom: 100px;
 }
 .chart-word p {
     margin: 30px 0;
