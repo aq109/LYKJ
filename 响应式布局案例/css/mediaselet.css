@@ -209,6 +209,9 @@
     }
 }
 @media screen  and (max-width:500px){
+    div.full-stack-project {
+        min-width: inherit;
+    }
     .full-stack-main-list {
         display: flex;
         flex-direction: row;
