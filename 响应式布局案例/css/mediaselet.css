@@ -1,0 +1,211 @@
+@import url(./common.css);
+@media screen and (min-width:1440px) {
+    .recommend-count-right-list li {
+        width: 25%;
+    }
+    li.show-recommend {
+        display: block !important;
+    }
+}
+@media screen and (min-width:1200px) {
+    .container {
+        width: 100%;
+    }
+    div.rotation-bottom-list {
+        min-width: 210px;
+    }
+    div.count-left-botton {
+        min-width: 280px;
+        margin-left: calc(-5%);
+    }
+}
+
+@media screen and (max-width:1200px) {
+    div.container {
+        width: 1200px;
+    }
+    .nav-left-items li:last-of-type {
+        display: block !important;
+    }
+    .nav-left-items li:nth-last-of-type(2) {
+        display: none;
+    }
+    div.rotation-bottom {
+        width: 100%;
+    }
+    .full-stack-main-list>li {
+        width: 16%;
+    }
+    .stack-center-park p {
+        height: inherit;
+    }
+    .park-plans ul {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width:1150px) {
+    .nav-left-items li:nth-last-of-type(3) {
+        display: none;
+    }
+    .footer-copy {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .nav-left-items li,
+    .nav-right-items li {
+        padding: 0 6px !important;
+    }
+    #search-some {
+        width: 50px;
+    }
+    div.pls-footer-inner,
+    div.page-center {
+        width: 95%;
+    }
+}
+@media screen and (max-width:768px) {
+    .big-page,
+    dd {
+        display: none;
+    }
+    div.container {
+        width: 100%;
+    }
+    div.small-page,
+    span.footer-icon {
+        display: block;
+    }
+    div.pls-footer-inner,
+    div.page-center {
+        width: 100%;
+    }
+    div.pls-footer-website .pls-footer-inner,
+    div.test-page .page-center,
+    .recommend-top,
+    .recommend-list-icon span,
+    .full-stack-bottom-main {
+        padding: 0;
+    }
+    .test-page {
+        margin-bottom: 0;
+    }
+    dl>dt{
+        margin-top: 15px;
+        font-size: 18px;
+    }
+    span.language{
+        font-size: 18px;
+    }
+    dl {
+        border-top: 1px solid #333;
+    }
+    .pls-footer-inner .small-show a {
+        color: black;
+        font-size: 20px;
+        background: transparent;
+    }
+    .pls-footer-inner .small-show {
+        display: block;
+        padding: 10px 0;
+        text-align: center;
+        background: var(--white-color-);
+        margin-bottom: 15px;
+    }
+    .footer-copy span {
+        display: block;
+        text-align: center;
+    }
+    .chart-word  h1 {
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+        color: var(--white-color-);
+    }
+    .chart-word p {
+        display: block;
+        height: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: var(--white-color-);
+    }
+    .chart-word {
+        margin-top: -80px;
+    }
+    .rotation-chart-list {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .rotation-bottom {
+        position: static;
+    }
+    .rotation-bottom-list h3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .rotation-bottom-list {
+        padding: 0 15px;
+        min-width: 140px;
+    }
+    .recommend-items {
+        flex-direction: column;
+    }
+    .recommend-items span,
+    .recommend-icon {
+        font-size: 16px;
+        padding-right: 15px;
+    }
+    .recommend-items li {
+        display: flex;
+    }
+    .recommend-list-icon {
+        padding: 15px 0;
+        flex-direction: row;
+    }
+    .recommend-items li.current {
+        border: none;
+    }
+    .recommend-items li {
+        box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+    }
+    .full-stack-main-list>li {
+        width: 49%;
+    }
+    .full-stack-project {
+        height: 110px;
+    }
+    .full-stack-project h3 {
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .full-stack-project i {
+        top: 10px;
+    }
+    .full-bottom-stack-park {
+        background: #242933;
+        padding: 0;
+    }
+    .park-plans ul {
+        display: block;
+    }
+    .full-stack-content {
+        padding-bottom: 20px;
+    }
+    .park-plans-entry {
+        display: flex;
+        justify-content: center;
+    }
+    .park-plans-entry>span {
+        display: inline-block;
+        padding: 10px 35px;
+        color: var(--white-color-);
+        background:var(--blue-color-);
+    }
+}
+

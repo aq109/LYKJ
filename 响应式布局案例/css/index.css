@@ -1,0 +1,280 @@
+@import url(./common.css);
+                                                        /* 轮播图位置 */
+
+.test-page {
+    background: url(https://main.qcloudimg.com/trisys/assets/home/images/hero/demo-ani-bg.jpg);
+    background-size: cover;
+    background-position: 0 -62px;
+    margin-bottom: 50px;
+    padding-bottom: 30px;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+}
+.rotation-chart a {
+    display: block;
+}
+.chart-list-button {
+    padding: 10px 35px;
+    color: var(--white-color-);
+    font-size: 20px;
+    background: var(--blue-color-);
+    margin-bottom: 30px;
+}
+/* .rotation-chart-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+} */
+.rotation-chart-items li{
+    float: left;
+}
+.circle {
+    width: 30px;
+    height: 5px;
+    margin-right: 15px;
+    border-radius: 5px;
+    background-color: #999;
+}
+li.current .circle{
+    background-color: var(--blue-color-);
+}
+.test-page div.page-center {
+    position: relative;
+}
+.rotation-bottom {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    padding-left: 0!important;
+    justify-content: space-around;
+}
+.ratation-p {
+    padding-left: 0!important;
+}
+.rotation-bottom-list {
+    flex: 1;
+    padding-left: 15px;
+    margin-right: 15px;
+    background-image: linear-gradient(0deg,#fff,#f3f5f8);
+    border: 2px solid #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+    border-radius: 4px;
+    box-sizing: border-box;   
+}
+.rotation-bottom-list:last-child{
+    margin-right: 0;
+}
+.rotation-bottom-list span,
+.rotation-bottom-list i {
+    font-size: 18px;
+    font-weight: bold;
+}
+.rotation-bottom-list p ,
+.xs-show {
+   padding-top: 20px;
+}
+
+
+
+
+                                                        /* 轮播图位置结束 */
+
+
+
+
+
+                                                        /* 热门推荐 */
+.recommend-top {
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+.recommend-top-ins,
+.hot-recommend h2 {
+    text-align: center;
+}
+.recommend-top-link{
+    color: var(--blue-color-);
+}
+.recommend-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+.recommend-items li {
+    flex: 1;
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.recommend-items li.current {
+    border-bottom: 3px solid var(--blue-color-);
+}
+.recommend-list-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15px;
+}
+.recommend-icon {
+    font-size: 30px;
+    color: var(--blue-color-);
+    margin-bottom: 6px;
+}
+.recommend-list-icon span {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+.hot-recommend ul {
+    margin: 0;
+}
+.recommend-count {
+    background: var(--background-color-);
+    background-size: cover;
+}
+.count-center {
+    padding: 40px 0;
+}
+.count-left-botton {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+    background-image: url(images/recom-bg_938.jpg),linear-gradient(180deg,#f3f5f8,#fff 178px,#fff);
+}
+.count-left-botton:last-child{
+    margin-bottom: 0;
+}
+.count-botton-left,
+.count-botton-right {
+    text-align: center;
+    padding: 5px 12px;
+    border: 1px solid transparent;
+}
+.count-botton-left {
+    color: var(--white-color-);
+    background-color: var(--blue-color-);
+    margin-right: 12px;
+}
+.count-botton-right {
+    background-color: #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+}
+
+
+/* list热门 */
+.recommend-count-right-list li {
+    padding: 10px 0;
+}
+.recommend-count-right-list li:hover h4 {
+    color: var(--blue-color-);
+}
+.recommend-count-right-list p {
+    /* font-weight: bold; */
+    color: #666;
+}
+.recommend-count-right-list .item-bottom span {
+    display: inline-block;
+    color: #999;
+    border: 1px solid #999;
+    padding: 0 5px;
+    margin-right: 5px;
+}
+
+
+                           /* 热门推荐结束 */
+
+
+                           /* 全栈区域 */
+.full-stack {
+    background-color: #242933;
+}
+.full-stack-content {
+    padding: 60px 20px;
+}
+.full-stack-header h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--white-color-);
+}
+.full-stack-main-list>li{
+    display: inline-block;
+    vertical-align: top;
+    width: 32.33%;
+    box-sizing: border-box;
+    padding: 0 8px;
+    margin-bottom: 24px;
+}
+.full-stack-project {
+    position: relative;
+    box-sizing: border-box;
+    height: 195px;
+    min-width: 115px;
+    background-image: linear-gradient(179deg,#292f3b 2%,#242933);
+    box-shadow: 8px 8px 20px 0 rgb(18 21 26 / 60%), -8px -8px 20px 0 rgb(54 62 77 / 50%), inset 0 4px 20px 0 rgb(36 41 51 / 50%);
+    border-radius: 4px;
+    padding: 44px 15px 0;
+}
+.full-stack-project:hover {
+    background: #242933;
+    box-shadow: inset 8px 8px 20px 0 rgb(18 21 26 / 60%),inset -8px -8px 20px 0 rgb(54 62 77 / 50%);
+}
+.full-project-nav {
+    display: block;
+    /* padding-top: 24px; */
+    color:var(--white-color-);
+}
+.full-project-nav li {
+    color: #999;
+}
+.full-project-nav:hover {
+    color: var(--white-color-)
+}
+.full-project-nav i {
+    position: absolute;
+    font-size: 30px;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.full-stack-project h3 {
+    margin-top: 0;
+}
+.full-stack-bottom-center a {
+    display: block;
+    color: var(--white-color-);
+}
+.full-bottom-stack-park {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 28px;
+    border-radius: 4px;
+    overflow: hidden;
+    background-color: #1a1e26;
+}
+.stack-center-park h3 {
+    margin: 0 0 24px;
+}
+.stack-center-park p {
+    height: 110px;
+    margin: 0 0 60px;
+    box-sizing: border-box;
+}
+.park-plans li {
+    margin: 0 0 12px;
+    margin-right: 25px;
+}
+.park-plans-icon {
+    padding-right: 10px;
+}
+.park-plans-entry {
+    padding-top: 20px;
+}
+.full-stack-project i,
+.park-plans i,
+.park-plans-entry {
+    color: var(--blue-color-);
+}

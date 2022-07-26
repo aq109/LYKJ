@@ -5,30 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/this.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/mediaselet.css">
     <title>Document</title>
     <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.cn/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.cn/npm/respond.js@1.4.2/dest/respond.min.js"></script>
     <![endif]-->
-    <style>
-      
-      nav {
-        background-image: url(https://main.qcloudimg.com/trisys/assets/home/images/hero/demo-ani-bg.jpg);
-        background-size: cover;
-      }
-      .logo a {
-        display: block;
-        width: 78px;
-        height: 18px;
-        background: url(https://cloudcache.tencentcs.com/qcloud/portal/kit/images/slice/logo.23996906.svg) no-repeat;
-      }
-    </style>
 </head>
 <body>
     <div class="container">
+        <!-- pc 平板 页面 导航-->
         <div class="row">
-            <!-- pc 平板 页面 导航-->
             <div class="big-page">
                 <nav>
                     <div class="left">
@@ -114,33 +103,599 @@
         </div>
 
         <!-- 轮播图区域 -->
-        <div class="row test-page">
-            <div class="page-center clearfix">
-                <div class="rotation-chart">
+        <div class="row test-page clearfix">
+            <div class="page-center">
+                <div class="rotation-chart clearfix">
                     <ul>
                         <li>
                             <a href="javascript:;">
-                                <div class="chart-word col-lg-7 col-md-7 col-sm-7">
-                                    <h1>AI+服务器超值特惠</h1>
-                                    <p>从金融、智慧零售、电商等行业维度出发，基于行业内痛点为用户提供爆款产品组合购</p>
-                                    <span class="chart-list-button hidden-xs">了解详情</span>
-                                </div>
-                                <div class="chart-list col-lg-5 col-md-5 col-sm-5">
+                                <div class="chart-list col-lg-5 col-md-5 col-sm-5 col-sm-push-7 col-md-push-7 col-lg-push-7">
                                     <div class="chart-list-img"><img src="https://img1.baidu.com/it/u=1966616150,2146512490&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500" alt="" style="width: 100%;"></div>
+                                </div>
+                                <div class="chart-word col-lg-7 col-md-7 col-sm-7 col-sm-pull-5 col-md-pull-5 col-lg-pull-5">
+                                    <h1>AI+服务器超值特惠</h1>
+                                    <p class="hidden-xs">从金融、智慧零售、电商等行业维度出发，基于行业内痛点为用户提供爆款产品组合购</p>
+                                    <p class="visible-xs">一站式数据处理服务，热卖资源包4.5折起</p>
+                                    <span class="chart-list-button hidden-xs">了解详情</span>
                                 </div>
                             </a>
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="rotation-chart-list col-lg-4 col-sm-4 col-md-4">
-                    <ul>
-                        <li style="float: left;"><div class="circle"></div></li>
-                        <li style="float: left;"><div class="circle"></div></li>
-                        <li style="float: left;"><div class="circle"></div></li>
-                        <li style="float: left;"><div class="circle"></div></li>
-                        <li style="float: left;"><div class="circle"></div></li>
-                    </ul>
-                </div> -->
+                <div class="row">
+                    <div class="rotation-chart-list col-lg-4 col-sm-4 col-md-4 col-xs-12">
+                        <ul class="rotation-chart-items">
+                            <li class="current"><div class="circle"></div></li>
+                            <li><div class="circle"></div></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rotation-bottom col-xs-12 col-lg-7 col-md-7">
+                    <a href="javascript:;" class="ratation-p col-xs-4 col-md-4 col-sm-4 col-lg-4">
+                        <div class="rotation-bottom-list">
+                            <h3>
+                                <i class="glyphicon glyphicon-cloud-download"></i>
+                                <span class="visible-xs xs-show">云服务器</span>
+                                <span class="hidden-xs">云服务器CVM</span>
+                                <p class="hidden-xs">提供安全可靠的弹性计算服务</p>
+                            </h3>
+                        </div>
+                    </a><a href="javascript:;" class="ratation-p col-xs-4 col-md-4 col-sm-4 col-lg-4">
+                        <div class="rotation-bottom-list">
+                            <h3>
+                                <i class="glyphicon glyphicon-tree-deciduous"></i>
+                                <span class="visible-xs xs-show">免费使用</span>
+                                <span class="hidden-xs">免费使用</span>
+                                <p class="hidden-xs">服务器等100+款产品免费试用</p>
+                            </h3>
+                        </div>
+                    </a><a href="javascript:;" class="ratation-p col-xs-4 col-md-4 col-sm-4 col-lg-4">
+                        <div class="rotation-bottom-list">
+                            <h3>
+                                <i class="glyphicon glyphicon-cloud-download"></i>
+                                <span class="hidden-xs">小程序微搭低代码</span> 
+                                <span class="visible-xs xs-show">微搭低代码</span>
+                                <p class="hidden-xs">海量模板一键生成</p>
+                            </h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- 热门推荐区域 -->
+        <div class="row">
+            <div class="hot-recommend">
+                <header class="recommend-top col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-center">
+                        <h2>性能强大、安全、稳定的云产品</h2>
+                        <div class="recommend-top-ins">
+                            <span class="hidden-xs">腾讯多年技术沉淀，300+ 款产品共筑腾讯云产品矩阵</span>
+                            <span>
+                                <a href="javascript:;">
+                                    <span class="recommend-top-link">查看全部产品 &nbsp;&gt;</span>
+                                </a>
+                            </span>
+                        </div>
+                    </div>
+                </header>
+                <div class="recommend-list col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-center">
+                        <ul class="recommend-items">
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-asterisk"></i><span>热门推荐</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-plus"></i><span>计算</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li class="current"><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-euro"></i><span>容器与中间件</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-eur"></i><span>存储</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-minus"></i><span>数据库</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-cloud"></i><span>网络与CDN</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-envelope"></i><span>视频服务</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="recommend-count col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-center count-center clearfix">
+                        <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-count-right col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <ul>
+                                <li>
+                                    <div class="recommend-count-right-list">
+                                        <ul>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>云原生数据库TDSQL_C</h4>
+                                                    <p>完全兼容MySQL和PG自研数据库</p>
+                                                    <span class="item-bottom">
+                                                        <span>超高性能</span>
+                                                        <span>弹性扩展</span>
+                                                        <span>海量存储</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>轻量应用服务器</h4>
+                                                    <p>开箱即用，轻量应用市场首选</p>
+                                                    <span class="item-bottom">
+                                                        <span>开箱即用</span>
+                                                        <span>轻松掌握</span>
+                                                        <span>高性价比</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>域名注册</h4>
+                                                    <p>专业域名服务，安全、省心、可信赖</p>
+                                                    <span class="item-bottom">
+                                                        <span>只能解析</span>
+                                                        <span>流量调度</span>
+                                                        <span>安全防护</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>CPU云服务器</h4>
+                                                    <p>极致并行计算机能力，专业计算机加速服</p>
+                                                    <span class="item-bottom">
+                                                        <span>加速服务</span>
+                                                        <span>极致性能</span>
+                                                        <span>选型丰富</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>云数据库Redis</h4>
+                                                    <p>高性能、低延迟、可伸缩的数据库</p>
+                                                    <span class="item-bottom">
+                                                        <span>托管部署</span>
+                                                        <span>平滑扩展</span>
+                                                        <span>自动容灾</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>云硬盘</h4>
+                                                    <p>持久性数据库存储设备</p>
+                                                    <span class="item-bottom">
+                                                        <span>弹性扩展</span>
+                                                        <span>快站备份</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>文件存储</h4>
+                                                    <p>可共享的文件存储服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>集成管理</span>
+                                                        <span>按需付费</span>
+                                                        <span>安全可靠</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>容器服务</h4>
+                                                    <p>高可扩展和高性能容器管理服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>生态开源</span>
+                                                        <span>高效部署</span>
+                                                        <span>稳定可靠</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 visible-xs show-recommend">
+                                                <a href="javascript:;">
+                                                    <h4>负载均衡</h4>
+                                                    <p>对多台服务器进行流量分发</p>
+                                                    <span class="item-bottom">
+                                                        <span>高性能</span>
+                                                        <span>高可靠</span>
+                                                        <span>低成本</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 visible-xs show-recommend">
+                                                <a href="javascript:;">
+                                                    <h4>即时通信IM</h4>
+                                                    <p>承载支撑亿级QQ用户的通信服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>全球部署</span>
+                                                        <span>安全防护</span>
+                                                        <span>快速接入</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 visible-xs show-recommend">
+                                                <a href="javascript:;">
+                                                    <h4>短信</h4>
+                                                    <p>快捷、简易、触达全球的短信服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>触达全球</span>
+                                                        <span>智能调度</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>腾讯云微搭低代码</h4>
+                                                    <p>可视化拖拽开发平台</p>
+                                                    <span class="item-bottom">
+                                                        <span>微信生态系统</span>
+                                                        <span>开发门槛低</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li style="display: none;">
+                                    <div class="recommend-count-right-list">
+                                        <ul>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>云原生数据库TDSQL_C</h4>
+                                                    <p>完全兼容MySQL和PG自研数据库</p>
+                                                    <span class="item-bottom">
+                                                        <span>超高性能</span>
+                                                        <span>弹性扩展</span>
+                                                        <span>海量存储</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>轻量应用服务器</h4>
+                                                    <p>开箱即用，轻量应用市场首选</p>
+                                                    <span class="item-bottom">
+                                                        <span>开箱即用</span>
+                                                        <span>轻松掌握</span>
+                                                        <span>高性价比</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>域名注册</h4>
+                                                    <p>专业域名服务，安全、省心、可信赖</p>
+                                                    <span class="item-bottom">
+                                                        <span>只能解析</span>
+                                                        <span>流量调度</span>
+                                                        <span>安全防护</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>CPU云服务器</h4>
+                                                    <p>极致并行计算机能力，专业计算机加速服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>加速服务</span>
+                                                        <span>极致性能</span>
+                                                        <span>选型丰富</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>云数据库Redis</h4>
+                                                    <p>高性能、低延迟、可伸缩的数据库</p>
+                                                    <span class="item-bottom">
+                                                        <span>托管部署</span>
+                                                        <span>平滑扩展</span>
+                                                        <span>自动容灾</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>云硬盘</h4>
+                                                    <p>持久性数据库存储设备</p>
+                                                    <span class="item-bottom">
+                                                        <span>弹性扩展</span>
+                                                        <span>快站备份</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>文件存储</h4>
+                                                    <p>可共享的文件存储服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>集成管理</span>
+                                                        <span>按需付费</span>
+                                                        <span>安全可靠</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>容器服务</h4>
+                                                    <p>高可扩展和高性能容器管理服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>生态开源</span>
+                                                        <span>高效部署</span>
+                                                        <span>稳定可靠</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 visible-xs show-recommend">
+                                                <a href="javascript:;">
+                                                    <h4>负载均衡</h4>
+                                                    <p>对多台服务器进行流量分发</p>
+                                                    <span class="item-bottom">
+                                                        <span>高性能</span>
+                                                        <span>高可靠</span>
+                                                        <span>低成本</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 visible-xs show-recommend">
+                                                <a href="javascript:;">
+                                                    <h4>即时通信IM</h4>
+                                                    <p>承载支撑亿级QQ用户的通信服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>全球部署</span>
+                                                        <span>安全防护</span>
+                                                        <span>快速接入</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12 visible-xs show-recommend">
+                                                <a href="javascript:;">
+                                                    <h4>短信</h4>
+                                                    <p>快捷、简易、触达全球的短信服务</p>
+                                                    <span class="item-bottom">
+                                                        <span>触达全球</span>
+                                                        <span>智能调度</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+                                                <a href="javascript:;">
+                                                    <h4>腾讯云微搭低代码</h4>
+                                                    <p>可视化拖拽开发平台</p>
+                                                    <span class="item-bottom">
+                                                        <span>微信生态系统</span>
+                                                        <span>开发门槛低</span>
+                                                    </span>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="recommend-list col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="page-center">
+                        <ul class="recommend-items">
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-pencil"></i><span>安全</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-glass"></i><span>大数据</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-music"></i><span>人工智能</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-search"></i><span>物联网</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-heart"></i><span>企业应用与云通信</span></i></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-star"></i><span>行业应用</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-star-empty"></i><span>开发者服务</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 全栈解决方案区域 -->
+        <div class="row">
+            <div class="full-stack">
+                <div class="page-center full-stack-content">
+                    <header class="full-stack-header">
+                        <h2>面向丰富业务场景的全栈解决方案</h2>
+                    </header>
+                    <div class="full-stack-bottom clearfix">
+                        <div class="full-stack-bottom-main col-lg-4 col-xs-6 col-md-12 col-sm-12">
+                            <ul class="full-stack-main-list">
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="full-stack-bottom-main col-lg-4 col-xs-6 col-md-12 col-sm-12 col-lg-push-4">
+                            <ul class="full-stack-main-list">
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="full-stack-project">
+                                        <a href="javascript:;" class="full-project-nav">
+                                            <i class="glyphicon glyphicon-off"></i>
+                                            <h3>游戏</h3>
+                                            <ul class="hidden-xs">
+                                                <li>腾讯游戏生态</li>
+                                                <li>小游戏</li>
+                                                <li>跨区部署</li>
+                                            </ul>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="full-stack-bottom-center col-lg-4 col-xs-12 col-lg-pull-4">
+                            <a href="javascript:;">
+                                <div class="full-bottom-stack-park">
+                                    <div class="stack-center-park">
+                                        <h3 class="hidden-xs">全栈解决方案</h3>
+                                        <p>腾讯云面向丰富的业务场景，提供整套行业和技术解决方案，助力客户安全高效上云。方案涵盖游戏、金融、教育、大数据、智能零售、小程序等多个领域。</p>
+                                        <div class="park-plans">
+                                            <ul>
+                                                <li><i class="glyphicon glyphicon-saved park-plans park-plans-icon"></i>通用解决方案</li>
+                                                <li><i class="glyphicon glyphicon-saved park-plans park-plans-icon"></i>行业解决方案</li>
+                                                <li><i class="glyphicon glyphicon-saved park-plans park-plans-icon"></i>微信解决方案</li>
+                                            </ul>
+                                        </div>
+                                        <div class="park-plans-entry">
+                                            <span>查看全部解决方案<i class="glyphicon glyphicon-menu-right hidden-xs"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -259,24 +814,6 @@
             </footer>
         </div>
     </div>
-    <script>
-        let btn1 = document.querySelector("#small-list");
-        let btnIcon = document.querySelectorAll('.small-icon');
-        let btn2 =document.querySelector('.icon-hidden');
-         function changeOff(){
-            btn1.style.display = 'block';
-            btnIcon.forEach(function(ele){
-                ele.style.display = 'none';
-                btn2.style.display = 'block';
-            })
-         }
-         function changeOn(){
-            btn1.style.display = 'none';
-            btnIcon.forEach(function(ele){
-                ele.style.display = 'block';
-                btn2.style.display = 'none';
-            })
-         }
-    </script>
+    <script src="./js/index.js"></script>
 </body>
 </html>
