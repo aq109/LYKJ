@@ -143,7 +143,7 @@ li.current .circle{
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
-    background-image: url(images/recom-bg_938.jpg),linear-gradient(180deg,#f3f5f8,#fff 178px,#fff);
+    background-image:linear-gradient(180deg,#f3f5f8,#fff 178px,#fff);
 }
 .count-left-botton:last-child{
     margin-bottom: 0;
@@ -169,7 +169,10 @@ li.current .circle{
 .recommend-count-right-list li {
     padding: 10px 0;
 }
-.recommend-count-right-list li:hover h4 {
+.button-count a:hover {
+    color: var(--white-color-);
+}
+.recommend-count-right-list>ul>li:hover h4 {
     color: var(--blue-color-);
 }
 .recommend-count-right-list p {
@@ -277,4 +280,201 @@ li.current .circle{
 .park-plans i,
 .park-plans-entry {
     color: var(--blue-color-);
+}
+
+/* 生态 */
+.develop-ecology h2 {
+    margin-top: 0;
+    padding-top: 40px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+body{
+    user-select: none;
+}
+.develop-ecology {
+    background-color: #f5f7fa
+}
+
+.develop-box {
+    box-sizing: border-box;
+    padding: 15px;
+    background-image: linear-gradient(0deg,#fff,#f3f5f8);
+    border: 2px solid #fff;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.develop-box-top h3{
+    margin: 8px 0;
+    font-size: 20px;
+    color: #253554;
+    font-weight: 500;
+    line-height: 28px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.box-list-class {
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: #253554;
+    line-height: 22px;
+}
+.develop-box-list {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+.develop-box-list span {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    padding: 0 10px;
+    color: #9dadc1;
+    border: 1px solid rgba(157,173,193,.5);
+    border-radius: 2px;
+}
+.develop-box-bottom {
+    position: relative;
+    z-index: 2;
+    font-size: 0;
+    margin: 0 -6px -12px;
+}
+.develop-box-bottom li {
+    display: inline-block;
+    vertical-align: top;
+    width: 33.33%;
+    box-sizing: border-box;
+    padding: 0 6px;
+    margin-bottom: 12px;
+}
+.develop-box-bottom>li>a {
+    display: block;
+    box-sizing: border-box;
+    height: 40px;
+    background: #fff;
+    border: 2px solid #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff, inset 0 4px 20px 0 hsl(0deg 0% 100% / 50%);
+    border-radius: 4px;
+    font-size: 14px;
+    color: #3d485d;
+    line-height: 36px;
+    text-align: center;
+    padding: 0 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.develop-box-right a {
+    font-size: inherit;
+}
+.develop-right-desc {
+    margin-bottom: 24px;
+}
+.develop-button {
+    box-sizing: border-box;
+    height: 44px;
+    line-height: 44px;
+    padding: 0 24px;
+    background: var(--blue-color-);
+    font-size: 16px;
+    color: var(--white-color-);
+    cursor: pointer;
+    border-color: transparent;
+}
+.develop-right-live {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.live-button-text {
+    padding: 0 30px 0 10px;
+}
+
+
+
+/* 基础设施建设 */
+.place-area {
+    padding: 60px 20px;
+    background-color: #f5f7fa;
+}
+.place-top-title,
+.place-top-sub {
+    text-align: center;
+}
+.place-link {
+    color: var(--blue-color-);
+}
+.place-top-sub {
+    margin-top: 12px;
+}
+.place-show-word {
+    margin: 0 4px;
+    line-height: 40px;
+    font-size: 32px;
+    color: var(--blue-color-);
+}
+.place-show-lg li {
+    margin-bottom: 40px;
+}
+.place-show-lg li:last-child {
+    margin-bottom: 0;
+}
+
+
+
+
+
+
+
+
+/* learn-more */
+.learn-more {
+    /* background: #242933; */
+    background: #242933 url(https://cloudcache.tencent-cloud.com/open_proj/proj_qcloud_v2/tea-portal-material-portal/build/Main/images/bg_ebb.jpg) 50% no-repeat;
+    background-size: auto 100%;
+}
+.learn-more-desc,
+.learn-more-btn a {
+    color: var(--white-color-);
+}
+.learn-more-desc {
+    font-size: 20px;
+}
+.learn-more-btn {
+    margin-top: 12px;
+}
+.learn-more-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 160px;
+    max-width: 1180px;
+}
+.learn-more-btn,
+.learn-more-btns {
+    min-width: 126px;
+    border-color: hsla(0,0%,100%,.6);
+}
+.learn-more-btns {
+    display: inline-block;
+    box-sizing: border-box;
+    height: 36px;
+    padding: 0 24px;
+    font-size: 14px;
+    line-height: 34px;
+    white-space: nowrap;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    border: 1px solid var(--white-color-);
+    outline: 0 none;
+    cursor: pointer;
+}
+.learn-more-btns:hover {
+    background-color: var(--white-color-);
+    color: #1a1e26;
 }

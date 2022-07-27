@@ -36,11 +36,11 @@ nav {
     justify-content: space-between;
     height: 63px;
     border-bottom: 1px solid #ccc;
-}
-nav {
+    padding: 0 25px;
     background-image: url(https://main.qcloudimg.com/trisys/assets/home/images/hero/demo-ani-bg.jpg);
     background-size: cover;
-  }
+}
+
   .logo a {
     display: block;
     width: 78px;

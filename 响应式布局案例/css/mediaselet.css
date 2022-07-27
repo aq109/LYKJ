@@ -18,6 +18,9 @@
         min-width: 280px;
         margin-left: calc(-5%);
     }
+    .full-stack-project {
+        min-width: 115px;
+    }
 }
 
 @media screen and (max-width:1200px) {
@@ -27,7 +30,8 @@
     .nav-left-items li:last-of-type {
         display: block !important;
     }
-    .nav-left-items li:nth-last-of-type(2) {
+    .nav-left-items li:nth-last-of-type(2),
+    .develop-box-list {
         display: none;
     }
     div.rotation-bottom {
@@ -42,6 +46,12 @@
     .park-plans ul {
         display: flex;
     }
+    .full-stack-bottom-main,
+    .full-stack-bottom-center {
+        width: 100%;
+        left: 0;
+    }
+    
 
 }
 
@@ -67,20 +77,39 @@
         width: 95%;
     }
 }
-@media screen and (max-width:768px) {
+
+
+
+@media screen and (max-width:769px) {
     .big-page,
-    dd {
+    dd,
+    .hidden-xs {
         display: none;
     }
-    div.container {
-        width: 100%;
-    }
     div.small-page,
-    span.footer-icon {
+    span.footer-icon,
+    .park-plans ul{
         display: block;
     }
+    .develop-box-list,
+    .recommend-items li {
+        display: flex;
+    }
+    .buy-footer,
+    .recommend-items i,
+    li.show-recommend,
+    .xs-show {
+        display: block !important;
+    }
     div.pls-footer-inner,
-    div.page-center {
+    div.page-center,
+    .develop-button,
+    .pls-footer-inner dl,
+    .chart-list,
+    .chart-word,
+    div.container,
+    .develop-left,
+    .develop-right {
         width: 100%;
     }
     div.pls-footer-website .pls-footer-inner,
@@ -97,7 +126,8 @@
         margin-top: 15px;
         font-size: 18px;
     }
-    span.language{
+    span.language,
+    .learn-more-desc{
         font-size: 18px;
     }
     dl {
@@ -136,6 +166,7 @@
         margin-top: -80px;
     }
     .rotation-chart-list {
+        width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -159,9 +190,6 @@
     .recommend-icon {
         font-size: 16px;
         padding-right: 15px;
-    }
-    .recommend-items li {
-        display: flex;
     }
     .recommend-list-icon {
         padding: 15px 0;
@@ -191,9 +219,6 @@
         background: #242933;
         padding: 0;
     }
-    .park-plans ul {
-        display: block;
-    }
     .full-stack-content {
         padding-bottom: 20px;
     }
@@ -207,7 +232,72 @@
         color: var(--white-color-);
         background:var(--blue-color-);
     }
+    .recommend-list {
+        padding: 0;
+    }
+    .recommend-items li {
+        padding: 0 15px;
+    }
+    .develop-box-right {
+        box-sizing: border-box;
+        padding: 15px;
+        background-image: linear-gradient(0deg,#fff,#f3f5f8);
+        border: 2px solid #fff;
+        cursor: pointer;
+        margin-bottom: 20px;
+    }
+    .full-stack-bottom-main,
+    .recommend-count-right-list>ul>li {
+        width: 50%;
+    }
+    .chart-list,
+    .chart-word {
+        left: 0;
+        top: 0;
+    }
+    .learn-more-btn {
+        margin-top: 32px;
+    }
+    .learn-more {
+        padding-top: 30px;
+        background-position: 70% 100%;
+        background-size: auto 50%;
+    }
 }
+
+
+/* @media screen and (width:768px) {
+    .hidden-xs {
+        display: none;
+    }
+    .full-stack-bottom-main,
+    .recommend-count-right-list>ul>li {
+        width: 50%;
+    }
+    .chart-list,
+    .chart-word {
+        left: 0;
+        top: 0;
+    }
+    .pls-footer-inner dl,
+    .chart-list,
+    .chart-word {
+        width: 100%;
+    }
+    .buy-footer,
+    .recommend-items i,
+    li.show-recommend,
+    .xs-show {
+        display: block !important;
+    }
+    .recommend-list {
+        padding: 0;
+    }
+    .recommend-items li {
+        padding: 0 15px;
+    }
+    
+} */
 @media screen  and (max-width:500px){
     div.full-stack-project {
         min-width: inherit;
@@ -216,5 +306,8 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+    }
+    div.recommend-count-right-list li {
+        width: 100%;
     }
 }
