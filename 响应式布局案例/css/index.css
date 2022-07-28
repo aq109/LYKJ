@@ -393,6 +393,83 @@ body{
     padding: 0 30px 0 10px;
 }
 
+/* 服务全球 */
+.serve-world header {
+    padding: 60px 0;
+}
+.list-page-items {
+    width: 1400px;
+    display: flex;
+}
+.center-list-page {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.serve-list-item {
+    width: 33.3%;
+    padding: 0 12px;
+    box-sizing: border-box;
+}
+.button-left {
+    position: absolute;
+    left: -15px;
+}
+.button-right {
+    position: absolute;
+    right: -15px;
+}
+.button-list {
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    line-height: 30px;
+    color: #666;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: linear-gradient(135deg,#dbe2e9,#fff);
+}
+.serve-list-item a {
+    display: block;
+    box-sizing: border-box;
+    height: 210px;
+    background-image: linear-gradient(0deg,#fff,#f3f5f8);
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+    border-radius: 4px;
+    white-space: normal;
+}
+.item-name {
+    font-size: 30px;
+    color: var(--blue-color-);
+    margin-right: 15px;
+}
+.serve-desc {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+.serve-desc {
+    padding: 53px 32px 0;
+}
+.item-content-bottom {
+    text-align: right;
+    margin-top: 24px;
+}
+.item-content-top {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+
+
+
+
+
+
+
 
 
 /* 基础设施建设 */
@@ -422,6 +499,156 @@ body{
 .place-show-lg li:last-child {
     margin-bottom: 0;
 }
+.place-xs-top {
+    margin-bottom: 4px;
+    font-size: 28px;
+    color: #3d485d;
+    line-height: 36px;
+}
+.place-show-xs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.place-xs-bottom {
+    display: inline-block;
+    padding: 0 8px;
+    padding-top: 4px;
+    border: 1px solid #242933;
+    border-radius: 3px;
+    /* background-color: pink; */
+}
+.place-show-xs li {
+    margin-right: 60px;
+}
+.place-show-xs li:last-child {
+    margin-right: 0;
+}
+.place-area-show {
+    height: 340px;
+}
+.place-area-bottom {
+    height: 435px;
+}
+.place-area-icon {
+    position: relative;
+    bottom: -60px;
+    padding: 0 28px;
+    background-image: linear-gradient(0deg,#fff,#f3f5f8);
+    border: 2px solid #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%);
+    border-radius: 4px;
+}
+.area-icon-items {
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    border: 1px solid #e5e8ed;
+    border-radius: 50%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 6px;
+    overflow: hidden;
+    padding: 15px;
+}
+.area-icon-items img {
+    width: 100%;
+    height: 100%;
+}
+.area-icon-item a {
+    display: block;
+    padding: 20px 8px 22px;
+    font-size: 14px;
+    color: #3d485d;
+    text-align: center;
+    line-height: 20px;
+}
+.area-icon-item a:hover .area-icon-items{
+    background: #e5e8ed;
+    border: 1px solid var(--white-color-);
+}
+.area-icon-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+}
+.area-icon-blue {
+    color: var(--blue-color-);
+}
+.area-icon-list li:first-child {
+    display: none;
+}
+.area-last-place {
+    padding-bottom: 20px;
+}
+/* .place-area-icon {
+    display: n;
+} */
+
+
+
+
+/* cloud-market */
+.cloud-market {
+    padding-bottom: 30px;
+}
+.cloud-market-header {
+    padding: 154px 20px 60px;
+}
+.cloud-market-main>div {
+    padding: 0;
+}
+.market-main-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+.market-main-desc em {
+    font-weight: bold;
+}
+.market-main-list li {
+    display: inline-block;
+    width: 49%;
+    margin-bottom: 20px;
+}
+.market-main-list i {
+    color: var(--blue-color-);
+    padding-right: 10px;
+}
+.market-right-items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    width: 108px;
+    height: 108px;
+    background-image: linear-gradient(0deg,#fff,#f3f5f8);
+    border: 2px solid #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+    border-radius: 10px;
+}
+.market-right-items i {
+    color: var(--blue-color-);
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+.market-right-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.market-right-list li {
+    flex: 20%;
+    margin-bottom: 24px;
+}
+
 
 
 

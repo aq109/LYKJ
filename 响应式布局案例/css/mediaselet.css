@@ -6,6 +6,9 @@
     li.show-recommend {
         display: block !important;
     }
+    .place-area-icon {
+        padding: 0 68px;
+    }
 }
 @media screen and (min-width:1200px) {
     .container {
@@ -51,7 +54,12 @@
         width: 100%;
         left: 0;
     }
-    
+    .market-right-list li {
+        flex: 25%;
+    }
+    .market-right-list li:nth-of-type(n+9) {
+        display: none;
+    }
 
 }
 
@@ -83,12 +91,14 @@
 @media screen and (max-width:769px) {
     .big-page,
     dd,
-    .hidden-xs {
+    .hidden-xs,
+    ul.area-icon-list li:last-of-type {
         display: none;
     }
     div.small-page,
     span.footer-icon,
-    .park-plans ul{
+    .park-plans ul,
+    .market-right-list li:nth-of-type(9) {
         display: block;
     }
     .develop-box-list,
@@ -263,6 +273,35 @@
         background-position: 70% 100%;
         background-size: auto 50%;
     }
+    .place-area-show {
+        margin-top: 60px;
+    }
+    li.area-icon-item,
+    .market-right-list li  {
+        flex: 33.33%;
+    }
+    .area-icon-items {
+        width: 60px;
+        height: 60px;
+    }
+    .place-show-xs li {
+        margin-right: 20px;
+    }
+    .market-right-items {
+        width: 90%;
+    }
+    .serve-list-item {
+        width: 25%;
+    }
+    .button-list {
+        display: none;
+    }
+    .serve-world .page-center {
+        width: 100%;
+    }
+    .serve-center-list {
+        padding: 0;
+    }
 }
 
 
@@ -311,3 +350,35 @@
         width: 100%;
     }
 }
+
+@media screen and (max-width:1200px) {
+    div.place-area-icon {
+        bottom: 0;
+    }
+    .place-show-lg {
+        display: none;
+    }
+    .place-area-show .visible-xs {
+        padding-top: 30px;
+        display: block !important;
+    }
+    .place-top-sub span {
+        display: block;
+        margin-bottom: 20px;
+    }
+    .area-icon-list li:first-child {
+        display: block;
+    }
+    .area-icon-item {
+        flex: 20%;
+    } 
+    .place-area-show,
+    .place-area-bottom {
+        height: auto;
+    }
+    .place-area-show {
+        margin-top: 0;
+    }
+
+}
+
