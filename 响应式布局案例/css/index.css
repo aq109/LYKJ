@@ -19,11 +19,6 @@
     background: var(--blue-color-);
     margin-bottom: 30px;
 }
-/* .rotation-chart-items {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-} */
 .rotation-chart-items li{
     float: left;
 }
@@ -71,10 +66,30 @@ li.current .circle{
     font-size: 18px;
     font-weight: bold;
 }
-.rotation-bottom-list p ,
+.rotation-bottom-list p,
 .xs-show {
    padding-top: 20px;
 }
+/* .ratation-ul {
+    position: relative;
+}
+.ratation-ul li {
+    position: absolute;
+}
+.ratation-ul li:nth-of-type(2) {
+    left: 100%;
+}
+.ratation-ul li:nth-of-type(3) {
+    left: 200%;
+}
+.rotation-chart {
+    width: 100%;
+    height: 375px;
+    overflow: hidden;
+} */
+
+
+
 
 
 
@@ -110,6 +125,7 @@ li.current .circle{
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    border-bottom: 3px solid transparent;
 }
 .recommend-items li.current {
     border-bottom: 3px solid var(--blue-color-);
@@ -135,6 +151,7 @@ li.current .circle{
 .recommend-count {
     background: var(--background-color-);
     background-size: cover;
+    transition: display ;
 }
 .count-center {
     padding: 40px 0;
@@ -166,6 +183,12 @@ li.current .circle{
 
 
 /* list热门 */
+.count-center {
+    display: none;
+}
+.recommend-count .current {
+    display: block;
+}
 .recommend-count-right-list li {
     padding: 10px 0;
 }
@@ -405,6 +428,7 @@ body{
     position: relative;
     width: 100%;
     overflow: hidden;
+    padding: 30px 0;
 }
 .serve-list-item {
     width: 33.3%;
@@ -462,6 +486,82 @@ body{
     -webkit-line-clamp: 3;
     overflow: hidden;
 }
+.page-center-special {
+    max-width: 2344px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.serve-item {
+    display: inline-block;
+    vertical-align: top;
+    padding: 0 6px 12px;
+}
+.serve-item:hover .serve-item a {
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 20%), -8px -8px 20px 0 #fff;
+}
+.serve-logo-img {
+    width: 100%;
+    max-width: 160px;
+}
+.serve-logo {
+    height: 40px;
+    background: url("https://main.qcloudimg.com/raw/2833767c4f8c015714020185c6d02b5e.png") no-repeat;
+    background-size: 100% auto;
+}
+.serve-bottom-items li:last-of-type .serve-logo {
+    background: url("https://main.qcloudimg.com/raw/a7f8253ee4c3d92335a4671a84eb12dc.png") no-repeat;
+    background-size: 100% auto;
+}
+.serve-bottom-items li:nth-last-of-type(2) .serve-logo {
+    background: url("https://main.qcloudimg.com/raw/35ae1a4636107a9e33111a2f5c2c0fa5.png") no-repeat;
+    background-size: 100% auto;
+}
+.serve-bottom-items li:nth-last-of-type(3) .serve-logo {
+   background: url("https://main.qcloudimg.com/raw/1582931a4de2929d6f5d6eb7362070a0.png") no-repeat;
+   background-size: 100% auto;
+ }
+ .serve-bottom-items li:nth-last-of-type(4) .serve-logo {
+    background: url("https://qcloudimg.tencent-cloud.cn/raw/3a5fb166b6e9d3be5ca90ed3f8475c8c.png") no-repeat;
+    background-size: 100% auto;
+    background-position: 0 50%;
+ }
+ .serve-bottom-items li:nth-last-of-type(5) .serve-logo {
+    background: url("https://main.qcloudimg.com/raw/ee9e36b94538eb7bd24244d2d697e374.png") no-repeat;
+    background-size: 100% auto;
+ }
+ .serve-bottom-items li:nth-last-of-type(6) .serve-logo {
+    background: url("https://qcloudimg.tencent-cloud.cn/raw/bc3f5ac74731c9859b68e73c36553e48.png") no-repeat;
+    background-size: 100% auto;
+    background-position: 0 20%;
+ }
+.serve-item a {
+    box-sizing: border-box;
+    width: 200px;
+    background: #fff;
+    box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff, inset 0 4px 20px 0 hsl(0deg 0% 100% / 50%);
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.serve-bottom-items {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+.serve-bottom-items li:nth-last-of-type(6),
+.serve-bottom-items li:nth-last-of-type(5),
+.serve-bottom-items li:nth-last-of-type(4),
+.serve-bottom-items li:nth-last-of-type(3),
+.serve-bottom-items li:nth-last-of-type(2),
+.serve-bottom-items li:nth-last-of-type(1) {
+    display: none;
+}
+
+
+
 
 
 

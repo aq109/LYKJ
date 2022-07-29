@@ -102,24 +102,52 @@
             </div>
         </div>
 
-        <!-- 轮播图区域 -->
-        <div class="row test-page clearfix">
+        <article>
+            <!-- 轮播图区域 -->
+        <div class="row test-page">
             <div class="page-center">
-                <div class="rotation-chart clearfix">
-                    <ul>
+                <div class="rotation-chart">
+                    <ul class="clearfix ratation-ul">
                         <li>
                             <a href="javascript:;">
                                 <div class="chart-list col-lg-5 col-md-5 col-sm-5 col-sm-push-7 col-md-push-7 col-lg-push-7">
                                     <div class="chart-list-img"><img src="https://img1.baidu.com/it/u=1966616150,2146512490&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500" alt="" style="width: 100%;"></div>
                                 </div>
                                 <div class="chart-word col-lg-7 col-md-7 col-sm-7 col-sm-pull-5 col-md-pull-5 col-lg-pull-5">
-                                    <h1>AI+服务器超值特惠</h1>
+                                    <h1>1+服务器超值特惠</h1>
                                     <p class="hidden-xs">从金融、智慧零售、电商等行业维度出发，基于行业内痛点为用户提供爆款产品组合购</p>
                                     <p class="visible-xs">一站式数据处理服务，热卖资源包4.5折起</p>
                                     <span class="chart-list-button hidden-xs">了解详情</span>
                                 </div>
                             </a>
                         </li>
+                        <!-- .....00000000000000000........ -->
+                        <!-- <li>
+                            <a href="javascript:;">
+                                <div class="chart-list col-lg-5 col-md-5 col-sm-5 col-sm-push-7 col-md-push-7 col-lg-push-7">
+                                    <div class="chart-list-img"><img src="https://img1.baidu.com/it/u=1966616150,2146512490&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500" alt="" style="width: 100%;"></div>
+                                </div>
+                                <div class="chart-word col-lg-7 col-md-7 col-sm-7 col-sm-pull-5 col-md-pull-5 col-lg-pull-5">
+                                    <h1>2+服务器超值特惠</h1>
+                                    <p class="hidden-xs">从金融、智慧零售、电商等行业维度出发，基于行业内痛点为用户提供爆款产品组合购</p>
+                                    <p class="visible-xs">一站式数据处理服务，热卖资源包4.5折起</p>
+                                    <span class="chart-list-button hidden-xs">了解详情</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">
+                                <div class="chart-list col-lg-5 col-md-5 col-sm-5 col-sm-push-7 col-md-push-7 col-lg-push-7">
+                                    <div class="chart-list-img"><img src="https://img1.baidu.com/it/u=1966616150,2146512490&fm=253&fmt=auto&app=138&f=JPEG?w=751&h=500" alt="" style="width: 100%;"></div>
+                                </div>
+                                <div class="chart-word col-lg-7 col-md-7 col-sm-7 col-sm-pull-5 col-md-pull-5 col-lg-pull-5">
+                                    <h1>3+服务器超值特惠</h1>
+                                    <p class="hidden-xs">从金融、智慧零售、电商等行业维度出发，基于行业内痛点为用户提供爆款产品组合购</p>
+                                    <p class="visible-xs">一站式数据处理服务，热卖资源包4.5折起</p>
+                                    <span class="chart-list-button hidden-xs">了解详情</span>
+                                </div>
+                            </a>
+                        </li> -->
                     </ul>
                 </div>
                 <div class="row">
@@ -182,9 +210,9 @@
                 <div class="recommend-list col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="page-center">
                         <ul class="recommend-items">
-                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-asterisk"></i><span>热门推荐</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li class="current"><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-asterisk"></i><span>热门推荐</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
                             <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-plus"></i><span>计算</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
-                            <li class="current"><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-euro"></i><span>容器与中间件</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
+                            <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-euro"></i><span>容器与中间件</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
                             <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-eur"></i><span>存储</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
                             <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-minus"></i><span>数据库</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
                             <li><a href="javascript:;" class="recommend-list-icon"><i class="recommend-icon glyphicon glyphicon-cloud"></i><span>网络与CDN</span></a><i class="glyphicon glyphicon-menu-right visible-xs"></i></li>
@@ -193,7 +221,8 @@
                     </div>
                 </div>
                 <div class="recommend-count col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="page-center count-center clearfix">
+                    <!-- 热门推荐 -->
+                    <div class="page-center count-center current clearfix">
                         <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
                             <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
                                 <h3>云服务器</h3>
@@ -483,6 +512,138 @@
                                     </div>
                                 </li>
                             </ul>
+                        </div>
+                    </div>
+                    <!-- 计算 -->
+                    <div class="page-center count-center clearfix">
+                        <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-count-right col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <h1>计算</h1>
+                        </div>
+                    </div>
+                    <!-- 容器与中间件 -->
+                    <div class="page-center count-center clearfix">
+                        <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-count-right col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <h1>容器与中间件</h1>
+                        </div>
+                    </div>
+                    <!-- 存储 -->
+                    <div class="page-center count-center clearfix">
+                        <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-count-right col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <h1>存储</h1>
+                        </div>
+                    </div>
+                    <!-- 数据库 -->
+                    <div class="page-center count-center clearfix">
+                        <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-count-right col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <h1>数据库</h1>
+                        </div>
+                    </div>
+                    <!-- 网络与CDN -->
+                    <div class="page-center count-center clearfix">
+                        <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-count-right col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <h1>网络与CDN</h1>
+                        </div>
+                    </div>
+                    <!-- 视频服务 -->
+                    <div class="page-center count-center clearfix">
+                        <div class="recommend-count-left col-xs-12 col-sm-12 col-md-12 col-lg-3">
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                            <div class="count-left-botton col-xs-12 col-sm-6 col-md-6 col-lg-12">
+                                <h3>云服务器</h3>
+                                <p>高安全、高可靠、高弹性的云计算服务</p>
+                                <div class="button-count clearfix">
+                                    <a href="javascript:;" class="count-botton-left col-lg-5">立即选购</a><a href="javascript:;" class="count-botton-right col-lg-5">产品介绍</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recommend-count-right col-xs-12 col-sm-12 col-md-12 col-lg-9">
+                            <h1>视频服务</h1>
                         </div>
                     </div>
                 </div>
@@ -845,7 +1006,247 @@
                         <div class="button-list button-left glyphicon glyphicon-menu-left"></div>
                         <div class="button-list button-right glyphicon glyphicon-menu-right"></div>
                     </div>
-                    <div class="serve-bottom-list"></div>
+                </div>
+                <div class="page-center-special">
+                    <div class="serve-bottom-list">
+                        <ul class="serve-bottom-items">
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="serve-bottom-items">
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="serve-bottom-items">
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="serve-item">
+                                <a href="javascript:;">
+                                    <div class="serve-logo-img">
+                                        <div class="serve-logo"></div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1243,6 +1644,7 @@
                 </div>
             </footer>
         </div>
+        </article>
     </div>
     <script src="./js/index.js"></script>
 </body>

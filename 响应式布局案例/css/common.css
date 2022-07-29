@@ -4,8 +4,14 @@
     content: "";
     display: table;
 } */
-
-
+#lyric_detail::-webkit-scrollbar-track{
+    opacity:0;/*完全透明*/
+    border-radius:2px;
+  }
+  .container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
 *{
     margin: 0;
     padding: 0;
